@@ -1,37 +1,41 @@
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-body{
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 1.7;
-	color: #fff;
-  	background-color: #1f2029;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow-x: none;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #fff;
+  background-color: #1f2029;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: none;
 }
-p{
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.7;
-	color: #fff;
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #fff;
   margin: 0;
 }
-.section-fluid-main{
+
+.section-fluid-main {
   position: relative;
   display: block;
   width: 100%;
   overflow: hidden;
 }
-.section{
+
+.section {
   position: relative;
   max-width: calc(100% - 40px);
   width: 860px;
@@ -42,19 +46,21 @@ p{
   flex-wrap: wrap;
   padding: 100px 0;
 }
-.section-fluid{
+
+.section-fluid {
   position: relative;
   width: 100%;
   display: block;
 }
 
 [type="radio"]:checked,
-[type="radio"]:not(:checked){
+[type="radio"]:not(:checked) {
   position: absolute;
   visibility: hidden;
 }
-.color-btn:checked + label,
-.color-btn:not(:checked) + label{
+
+.color-btn:checked+label,
+.color-btn:not(:checked)+label {
   position: relative;
   height: 40px;
   transition: all 200ms linear;
@@ -65,40 +71,45 @@ p{
   cursor: pointer;
   color: #ffeba7;
   margin-right: 10px;
-  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
+  box-shadow: 0 12px 35px 0 rgba(16, 39, 112, .25);
   z-index: 10;
   background-position: center;
   background-size: cover;
   border: 3px solid transparent;
 }
-.color-btn:checked + label{
+
+.color-btn:checked+label {
   border-color: #434343;
   transform: scale(1.1);
 }
-label.first-color{
+
+label.first-color {
   margin-left: 500px;
   opacity: 80%;
   background-image: url('https://www.kia.com/content/dam/kwcms/tr/tr/images/showroom/ceed/genel-bakis/360vr/ikonlar/kia-ceed-360-derece-gorunum-ikon-manyetik-kirmizi.png');
 }
-label.color-2{
+
+label.color-2 {
   opacity: 80%;
   background-image: url('https://www.kia.com/content/dam/kwcms/tr/tr/images/showroom/niro/genel-bakis/306vr/2020/kia-niro-360-derece-gorunum-ikon-platinyum-gri.png');
 }
-label.color-3{
+
+label.color-3 {
   opacity: 80%;
   background-image: url('https://www.kia.com/content/dam/kwcms/tr/tr/images/showroom/niro/genel-bakis/306vr/2020/kia-niro-okyanus-mavi-icon.gif');
 }
 
-label.color-5{
+label.color-5 {
   opacity: 80%;
   background-image: url('https://www.kia.com/content/dam/kwcms/tr/tr/images/showroom/stonic/genel_bakis/360vr/ikon-alp-beyaz-opak.png');
 }
-label.color-6{
+
+label.color-6 {
   opacity: 80%;
   background-image: url('https://www.kia.com/content/dam/kwcms/tr/tr/images/showroom/sorento/genel_bakis/360vr/ikon-espresso-kahve-metalik.png');
 }
 
-.img-wrap{
+.img-wrap {
   position: absolute;
   top: 100px;
   left: -500px;
@@ -114,50 +125,68 @@ label.color-6{
   background-image: url('https://www.kia.com/content/dam/kwcms/tr/tr/images/showroom/sorento/2021/genel-bakis/360/runway-kirmizi/kia-sorento-hev-gls-my22-c5rrunwayred-19_0000.png');
   opacity: 0;
 }
-.for-color-1:checked ~ .img-wrap.chair-1{
+
+.for-color-1:checked~.img-wrap.chair-1 {
   opacity: 1;
-  animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) both;
-}
-.img-wrap.chair-2{
-  background-image: url('https://www.kia.com/content/dam/kwcms/tr/tr/images/showroom/sorento/2021/genel-bakis/360/platinyum-gri/kia-sorento-hev-gls-my22-abtplatinumgraphite-19_0000.png');
-}
-.for-color-2:checked ~ .img-wrap.chair-2{
-  opacity: 1;
-  animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) both;
-}
-.img-wrap.chair-3{
-  background-image: url('https://www.kia.com/content/dam/kwcms/tr/tr/images/showroom/sorento/2021/genel-bakis/360/mineral-mavi/kia-sorento-hev-gls-my22-m4bmineralblue-19_0000.png');
-}
-.for-color-3:checked ~ .img-wrap.chair-3{
-  opacity: 1;
-  animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 0.9s cubic-bezier(.36, .07, .19, .97) both;
 }
 
-.img-wrap.chair-5{
+.img-wrap.chair-2 {
+  background-image: url('https://www.kia.com/content/dam/kwcms/tr/tr/images/showroom/sorento/2021/genel-bakis/360/platinyum-gri/kia-sorento-hev-gls-my22-abtplatinumgraphite-19_0000.png');
+}
+
+.for-color-2:checked~.img-wrap.chair-2 {
+  opacity: 1;
+  animation: shake 0.9s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+.img-wrap.chair-3 {
+  background-image: url('https://www.kia.com/content/dam/kwcms/tr/tr/images/showroom/sorento/2021/genel-bakis/360/mineral-mavi/kia-sorento-hev-gls-my22-m4bmineralblue-19_0000.png');
+}
+
+.for-color-3:checked~.img-wrap.chair-3 {
+  opacity: 1;
+  animation: shake 0.9s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+.img-wrap.chair-5 {
   background-image: url('https://www.kia.com/content/dam/kwcms/tr/tr/images/showroom/sorento/2021/genel-bakis/360/inci-beyaz/kia-sorento-hev-gls-my22-swpsnowwhitepearl-19_0000.png');
 }
-.for-color-5:checked ~ .img-wrap.chair-5{
+
+.for-color-5:checked~.img-wrap.chair-5 {
   opacity: 1;
-  animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 0.9s cubic-bezier(.36, .07, .19, .97) both;
 }
-.img-wrap.chair-6{
+
+.img-wrap.chair-6 {
   background-image: url('https://www.kia.com/content/dam/kwcms/tr/tr/images/showroom/sorento/2021/genel-bakis/360/essence-kahverengi/kia-sorento-hev-gls-my22-be2essencebrown-19_0000.png');
 }
-.for-color-6:checked ~ .img-wrap.chair-6{
+
+.for-color-6:checked~.img-wrap.chair-6 {
   opacity: 1;
-  animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 0.9s cubic-bezier(.36, .07, .19, .97) both;
 }
+
 @keyframes shake {
-  10%, 90% {
+
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0) rotate(-1deg);
-  }  
-  20%, 80% {
+  }
+
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0) rotate(2deg);
   }
-  30%, 50%, 70% {
+
+  30%,
+  50%,
+  70% {
     transform: translate3d(-3px, 0, 0) rotate(-3deg);
   }
-  40%, 60% {
+
+  40%,
+  60% {
     transform: translate3d(3px, 0, 0) rotate(3deg);
   }
 }
@@ -171,46 +200,55 @@ label.color-6{
   height: 100%;
   display: block;
   z-index: 1;
-  background-image: linear-gradient(196deg,#f1a9a9,#e66767);
+  background-image: linear-gradient(196deg, #f1a9a9, #e66767);
   transition: all 250ms linear;
   transition-delay: 300ms;
 }
+
 .back-color.chair-2 {
-  background-image: linear-gradient(196deg,#4c4c4c,#262626);
+  background-image: linear-gradient(196deg, #4c4c4c, #262626);
   opacity: 0;
 }
-.for-color-2:checked ~ .back-color.chair-2{
-  opacity: 1;
-}
-.back-color.chair-3 {
-  background-image: linear-gradient(196deg,#8a9fb2,#5f7991);
-  opacity: 0;
-}
-.for-color-3:checked ~ .back-color.chair-3{
-  opacity: 1;
-}
-.back-color.chair-5 {
-  background-image: linear-gradient(196deg,#afa6a0,#8c7f76);
-  opacity: 0;
-}
-.for-color-5:checked ~ .back-color.chair-5{
-  opacity: 1;
-}
-.back-color.chair-6 {
-  background-image: linear-gradient(196deg,#aaadac,#838786);
-  opacity: 0;
-}
-.for-color-6:checked ~ .back-color.chair-6{
+
+.for-color-2:checked~.back-color.chair-2 {
   opacity: 1;
 }
 
-.info-wrap{
+.back-color.chair-3 {
+  background-image: linear-gradient(196deg, #8a9fb2, #5f7991);
+  opacity: 0;
+}
+
+.for-color-3:checked~.back-color.chair-3 {
+  opacity: 1;
+}
+
+.back-color.chair-5 {
+  background-image: linear-gradient(196deg, #afa6a0, #8c7f76);
+  opacity: 0;
+}
+
+.for-color-5:checked~.back-color.chair-5 {
+  opacity: 1;
+}
+
+.back-color.chair-6 {
+  background-image: linear-gradient(196deg, #aaadac, #838786);
+  opacity: 0;
+}
+
+.for-color-6:checked~.back-color.chair-6 {
+  opacity: 1;
+}
+
+.info-wrap {
   position: relative;
   margin-left: 500px;
   z-index: 10;
   display: block;
   text-align: left;
 }
+
 .title-up {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -222,7 +260,8 @@ label.color-6{
   margin-top: 0;
   margin-bottom: 10px;
 }
-h2{
+
+h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 34px;
@@ -231,7 +270,8 @@ h2{
   margin-top: 0;
   margin-bottom: 10px;
 }
-h4{
+
+h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 26px;
@@ -240,13 +280,15 @@ h4{
   margin-top: 0;
   margin-bottom: 30px;
 }
-h4 span{
+
+h4 span {
   text-decoration: line-through;
   font-size: 20px;
   opacity: 0.6;
   padding-left: 15px;
 }
-h5{
+
+h5 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -255,8 +297,9 @@ h5{
   margin-top: 0;
   margin-bottom: 20px;
 }
-.desc-btn:checked + label,
-.desc-btn:not(:checked) + label{
+
+.desc-btn:checked+label,
+.desc-btn:not(:checked)+label {
   position: relative;
   transition: all 200ms linear;
   display: inline-block;
@@ -271,10 +314,12 @@ h5{
   margin-right: 25px;
   opacity: 0.5;
 }
-.desc-btn:checked + label{
+
+.desc-btn:checked+label {
   opacity: 1;
 }
-.desc-btn:not(:checked) + label:hover {
+
+.desc-btn:not(:checked)+label:hover {
   opacity: 0.8;
 }
 
@@ -287,6 +332,7 @@ h5{
   pointer-events: none;
   transform: translateY(20px);
 }
+
 .desc-sec.accor-2 {
   position: absolute;
   top: 25px;
@@ -294,27 +340,31 @@ h5{
   width: 150%;
   z-index: 2;
 }
-#desc-1:checked ~ .desc-sec.accor-1 {
+
+#desc-1:checked~.desc-sec.accor-1 {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
-#desc-2:checked ~ .desc-sec.accor-2 {
+
+#desc-2:checked~.desc-sec.accor-2 {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
-.section-inline{
+
+.section-inline {
   position: relative;
   display: inline-block;
   margin-right: 20px;
 }
-.section-inline p span{
+
+.section-inline p span {
   font-size: 30px;
   line-height: 1.1;
 }
 
-.btn{
+.btn {
   position: relative;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -340,16 +390,18 @@ h5{
   overflow: hidden;
   background-color: transparent;
   color: #fff;
-  box-shadow: 0 6px 15px 0 rgba(16,39,112,.15);
+  box-shadow: 0 6px 15px 0 rgba(16, 39, 112, .15);
   transition: all 250ms linear;
   text-decoration: none;
   margin-top: 50px;
 }
+
 .icon {
   padding-right: 7px;
   font-size: 20px;
 }
-.btn:before{
+
+.btn:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -360,26 +412,32 @@ h5{
   background-color: #944852;
   transition: background-color 250ms 300ms ease;
 }
-.btn:hover{
-  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
+
+.btn:hover {
+  box-shadow: 0 12px 35px 0 rgba(16, 39, 112, .25);
   background-color: #000;
 }
-.for-color-2:checked ~ .info-wrap .btn:before{
+
+.for-color-2:checked~.info-wrap .btn:before {
   background-color: #1a1a1a;
 }
-.for-color-3:checked ~ .info-wrap .btn:before{
+
+.for-color-3:checked~.info-wrap .btn:before {
   background-color: #40566e;
 }
-.for-color-5:checked ~ .info-wrap .btn:before{
+
+.for-color-5:checked~.info-wrap .btn:before {
   background-color: #8c7f76;
 }
-.for-color-6:checked ~ .info-wrap .btn:before{
+
+.for-color-6:checked~.info-wrap .btn:before {
   background-color: #5d6160;
 }
 
 .clearfix {
   width: 100%;
 }
+
 .clearfix::after {
   display: block;
   clear: both;
@@ -387,79 +445,254 @@ h5{
 }
 
 .logo {
-	position: fixed;
-	top: 25px;
-	left: 25px;
-	display: block;
-	z-index: 1000;
-	transition: all 250ms linear;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  display: block;
+  z-index: 1000;
+  transition: all 250ms linear;
 }
+
 .logo img {
-	height: 26px;
-	width: auto;
-	display: block;
-	transition: filter 250ms 700ms linear;
+  height: 26px;
+  width: auto;
+  display: block;
+  transition: filter 250ms 700ms linear;
 }
 
 @media screen and (max-width: 991px) {
-  .section{
+  .section {
     margin: 0 auto;
     text-align: center;
     max-width: calc(100% - 40px);
     width: 370px;
   }
-  label.first-color{
+
+  label.first-color {
     margin-left: 0;
   }
-  .info-wrap{
+
+  .info-wrap {
     margin-left: 0;
     width: 370px;
     margin: 0 auto;
     text-align: center;
   }
-  .img-wrap{
+
+  .img-wrap {
     width: 375px;
     height: 308px;
     left: 50%;
     margin-left: -190px;
   }
+
   .mob-margin {
     margin-top: 320px;
   }
-  .desc-btn:checked + label,
-  .desc-btn:not(:checked) + label{
+
+  .desc-btn:checked+label,
+  .desc-btn:not(:checked)+label {
     margin-right: 15px;
     margin-left: 15px;
   }
-  .color-btn:checked + label,
-  .color-btn:not(:checked) + label{
+
+  .color-btn:checked+label,
+  .color-btn:not(:checked)+label {
     height: 40px;
     width: 40px;
     margin: 5px auto;
     text-align: center;
   }
-  .section-inline{
+
+  .section-inline {
     margin: 0 5px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  .section{
+  .section {
     width: 280px;
   }
-  .info-wrap{
+
+  .info-wrap {
     width: 280px;
   }
-  .color-btn:checked + label,
-  .color-btn:not(:checked) + label{
+
+  .color-btn:checked+label,
+  .color-btn:not(:checked)+label {
     height: 30px;
     width: 30px;
   }
-  .section-inline p span{
+
+  .section-inline p span {
     font-size: 24px;
     line-height: 1.1;
   }
-  .section-inline p{
+
+  .section-inline p {
     font-size: 14px;
   }
+}
+
+.btn-21 {
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1em;
+  width: 200px;
+  height: 45px;
+  position: relative;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  border-radius: 0px;
+  background: transparent;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+}
+
+.btn-21:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #bbb);
+  animation: btn-21-right 2s linear infinite;
+  transition: 0.5s ease-in-out;
+}
+
+.btn-21:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #bbb);
+  animation: btn-21-bottom 2s linear infinite;
+  animation-delay: 1s;
+  transform: translateY(-100%);
+}
+
+.btn-21 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+}
+
+.btn-21 span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, transparent, #bbb);
+  animation: btn-21-left 2s linear infinite;
+}
+
+.btn-21 span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, transparent, #bbb);
+  animation: btn-21-top 2s linear infinite;
+  animation-delay: 1s;
+  transform: translateY(-100%);
+}
+
+.btn-21:hover:before {
+  background: linear-gradient(to right, transparent, rgb(0, 0, 0));
+}
+
+.btn-21:hover:after {
+  background: linear-gradient(to bottom, transparent, rgb(0, 0, 0));
+}
+
+.btn-21 span:hover:before {
+  background: linear-gradient(to top, transparent, rgb(0, 0, 0));
+}
+
+.btn-21 span:hover:after {
+  background: linear-gradient(to left, transparent, rgb(0, 0, 0));
+}
+
+.btn-21:hover {
+  color: rgb(255, 255, 255);
+}
+
+.btn-21:active:before {
+  background: linear-gradient(to right, transparent, #00a7fc);
+}
+
+.btn-21:active:after {
+  background: linear-gradient(to bottom, transparent, #00a7fc);
+}
+
+.btn-21 span:active:before {
+  background: linear-gradient(to top, transparent, #00a7fc);
+}
+
+.btn-21 span:active:after {
+  background: linear-gradient(to left, transparent, #00a7fc);
+}
+
+.btn-21:active {
+  color: #00a7fc;
+}
+
+@keyframes btn-21-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+
+}
+
+@keyframes btn-21-top {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+
+}
+
+@keyframes btn-21-left {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+
+}
+
+@keyframes btn-21-bottom {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+
+}
+
+.btn-21:focus {
+  outline: none
 }
